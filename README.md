@@ -1,6 +1,8 @@
 # git-commands
 One-line publish and push git-commands to save time.
 
+###### *Not known to work well with extensionless files.
+
 ## Installation
 ```bash
 git clone https://github.com/ethancrist/git-commands.git && \
