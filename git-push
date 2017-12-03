@@ -6,15 +6,11 @@ var usage = "git-push 'path/to/file1 folder2 file3' 'commit message' <origin> <b
 //var user = run('git config user.name', { silent: true });
 
 function run(command, callback) {
-    if (!callback) callback = { silent: false };
-
     console.log('Running '+command+'...');
     var run = exec(command, function(err, stdout, stderr) {
         if (err) return console.log(err+'\nUSAGE: "'+usage+'"');
-        if (!callback.silent) console.log(stdout);
-    });
-    run.on('exit', function (code) {
-        if (typeof(callback) === "function") callback();
+        console.log(stdout);
+        if (callback) callback();
     });
 }
 
