@@ -23,4 +23,8 @@ function run(command, callback) {
 
 if (process.argv.length !== 6) return console.log('USAGE: "'+usage+'"');
 
-run('git add '+process.argv[2], run('git commit -m "'+process.argv[3]+'"', run('git push '+process.argv[4]+' '+process.argv[5])))
+run('git add '+process.argv[2], () => {
+    run ('git commit -m "'+process.argv[3]+'"', () => {
+        run('git push '+process.argv[4]+' '+process.argv[5])
+    })
+})
