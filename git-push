@@ -16,7 +16,6 @@ function run(command, callback) {
         response = stdout;
     });
     run.on('exit', function (code) {
-        if (!callback.silent) console.log(code);
         if (typeof(callback) === "function") callback();
     });
     return response;
