@@ -7,18 +7,15 @@ var usage = "git-push 'path/to/file1 folder2 file3' 'commit message' <origin> <b
 
 function run(command, callback) {
     if (!callback) callback = { silent: false };
-    var response = '';
 
     console.log('Running '+command+'...');
     var run = exec(command, function(err, stdout, stderr) {
         if (err) return console.log(err+'\nUSAGE: "'+usage+'"');
         if (!callback.silent) console.log(stdout);
-        response = stdout;
     });
     run.on('exit', function (code) {
         if (typeof(callback) === "function") callback();
     });
-    return response;
 }
 
 if (process.argv.length !== 6) return console.log('USAGE: "'+usage+'"');
