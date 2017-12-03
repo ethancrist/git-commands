@@ -5,4 +5,6 @@ cd git-commands;
 cp git-push /usr/local/bin/git-push;
 cp git-publish /usr/local/bin/git-publish;
 cp git-clone /usr/local/bin/git-clone;
+cd ..;
+rm -R git-commands;
 echo "git-commands is now installed.";
