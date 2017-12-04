@@ -23,5 +23,5 @@ git-publish 'path/to/file1 folder2 file3' 'commit message' <origin> <branch>
 
 To clone from your personal github, i.e. ``` git clone https://github.com/ethancrist/git-commands.git ```
 ```bash
-git-clone git-commands.git
+git-clone git-commands
 ```
