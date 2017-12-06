@@ -39,4 +39,8 @@ git-publish app.js
 # Push/publish and push to origin/master
 git-push 'api.js app.js' 'Commit message'
 git-publish 'api.js app.js' 'Commit message'
+
+# Push/publish and push to <branch>/master
+git-push app.js origin2
+git-publish app.js origin2
 ```
