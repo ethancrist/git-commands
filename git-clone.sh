@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 if [ -n "$1" ]; then
     USER="$(git config user.name)"
