@@ -2,11 +2,11 @@
 
 push() {
     echo "Running git add $1"
-    git add "$1"
-    echo "Running git commit $2"
-    git commit -m $2
-    echo "Running git push
-    git push
+    git add $1
+    echo "Running git commit -m $2"
+    git commit -m "$2"
+    echo "Running git push $3 $4"
+    git push $3 $4
 }
 
 if [ -n "$1" ] && [ -n "$2" ] && [ -n "$3" ] && [ -n "$4" ]; then
@@ -23,5 +23,5 @@ elif [ -n "$1" ]; then
     push "$1" "'Modified $1'" "origin" "master"
 else
     # git-push
-    push "-all" "'Modified all of master'" "origin" "master"
+    push --all "Modified all of master" origin master
 fi;
