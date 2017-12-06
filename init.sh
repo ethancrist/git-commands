@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 echo "Installing commands...";
 cp git-commands/git-push.sh /usr/local/bin/git-push;
 cp git-commands/git-publish.sh /usr/local/bin/git-publish;
