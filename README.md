@@ -11,17 +11,29 @@ git-commands/init
 Be sure that ``` git config user.name ``` returns your github username, as this will be the author for all of your pushes.
 
 ## Usage
-To push multiple files/folders to github
+###### Push multiple files/folders
 ```bash
 git-push 'path/to/file1 folder2 file3' 'commit message' <origin> <branch>
 ```
 
-To publish on npm and push to github
+###### Publish on npm and push to github
 ```bash
 git-publish 'path/to/file1 folder2 file3' 'commit message' <origin> <branch>
 ```
 
-To clone from your personal github, i.e. ``` git clone https://github.com/ethancrist/git-commands.git ```
+###### Clone from your personal github
 ```bash
-git-clone git-commands
+git-clone <local-repo>
+```
+
+##### Super-short commands
+```bash
+# Push everything to origin/master with commit message "Modified all of master"
+git-push
+
+# Push app.js to origin/master with commit message "Modified app.js"
+git-push app.js
+
+# Push to origin/master
+git-push 'api.js app.js' 'Commit message'
 ```
