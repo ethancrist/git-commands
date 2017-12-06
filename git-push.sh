@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 push() {
     echo "Running git add $1"
