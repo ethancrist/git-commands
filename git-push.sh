@@ -4,7 +4,7 @@ push() {
     echo "Running git add $1"
     git add $1
     echo "Running git commit -m $2"
-    git commit -m "$2"
+    git commit -m $2
     echo "Running git push $3 $4"
     git push $3 $4
 }
