@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 push() {
     echo "Running git add $1"
     git add $1
