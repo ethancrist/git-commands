@@ -1,10 +1,8 @@
 #!/bin/bash
 
 echo "Installing commands...";
-cd git-commands;
-cp git-push /usr/local/bin/git-push;
-cp git-publish /usr/local/bin/git-publish;
-cp git-clone /usr/local/bin/git-clone;
-cd ..;
+cp git-commands/git-push.sh /usr/local/bin/git-push;
+cp git-commands/git-publish.sh /usr/local/bin/git-publish;
+cp git-commands/git-clone.sh /usr/local/bin/git-clone;
 rm -R git-commands;
 echo "git-commands is now installed.";
