@@ -20,8 +20,8 @@ elif [ -n "$1" ] && [ -n "$2" ]; then
     push $1 $2 origin master
 elif [ -n "$1" ]; then
     # git-push 'file.txt'
-    push $1 "Modified $1" origin master
+    push $1 "Update $1" origin master
 else
     # git-push
-    push --all "Modified all of master" origin master
+    push --all "Update all of master" origin master
 fi;
