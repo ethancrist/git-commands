@@ -28,12 +28,15 @@ git-clone <local-repo>
 
 ##### Super-short commands
 ```bash
-# Push everything to origin/master with commit message "Modified all of master"
+# Push/publish and push everything to origin/master with commit message "Modified all of master"
 git-push
+git-publish
 
-# Push app.js to origin/master with commit message "Modified app.js"
+# Push/publish and push app.js to origin/master with commit message "Modified app.js"
 git-push app.js
+git-publish app.js
 
-# Push to origin/master
+# Push/publish and push to origin/master
 git-push 'api.js app.js' 'Commit message'
+git-publish 'api.js app.js' 'Commit message'
 ```
