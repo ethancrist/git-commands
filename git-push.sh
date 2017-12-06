@@ -11,16 +11,16 @@ push() {
 
 if [ -n "$1" ] && [ -n "$2" ] && [ -n "$3" ] && [ -n "$4" ]; then
     # git-push 'file.txt' 'Commit message' origin master
-    push "$1" "$2" "$3" "$4"
+    push $1 $2 $3 $4
 elif [ -n "$1" ] && [ -n "$2" ] && [ -n "$3" ]; then
     # git-push 'file.txt' 'Commit message' origin
-    push "$1" "$2" "$3" "master"
+    push $1 $2 $3 master
 elif [ -n "$1" ] && [ -n "$2" ]; then
     # git-push 'file.txt' 'Commit message'
-    push "$1" "$2" "origin" "master"
+    push $1 $2 origin master
 elif [ -n "$1" ]; then
     # git-push 'file.txt'
-    push "$1" "'Modified $1'" "origin" "master"
+    push $1 "Modified $1" origin master
 else
     # git-push
     push --all "Modified all of master" origin master
