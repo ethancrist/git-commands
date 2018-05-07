@@ -6,7 +6,8 @@ One-line publish and push git-commands to save time.
 ## Installation
 ```bash
 git clone https://github.com/ethancrist/git-commands.git && \
-git-commands/init.sh
+git-commands/init.sh && \
+chmod u+x /usr/local/bin/git-clone /usr/local/bin/git-push /usr/local/bin/git-publish
 ```
 Be sure that ``` git config user.name ``` returns your github username, as this will be the author for all of your pushes.
 
